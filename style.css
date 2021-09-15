@@ -56,19 +56,40 @@ body {
 }
 
 .mixcloud-container {
-    width: 500px;
+    width: 100%;
+    max-width: 570px;
     height: 100%;
-    /*display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;*/
     position: absolute;
     top: 0;
     right: 0;
-    /*background: rgba(0, 0, 0, 0.6);*/
-    background: red;
+    /*background: rgba(255, 255, 255, 0.3);*/
+    background: rgb(80, 80, 80);
+    opacity: .9;
     overflow-y: auto;
     z-index: 1;
+}
+
+.exit {
+    display: block;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    cursor: pointer;
+}
+
+.line {
+    background: white;
+    width: 25px;
+    height: 3px;
+    margin: 4px;
+}
+
+.top {
+    transform: rotate(-45deg) translate(-6px, 2px);
+}
+
+.bottom {
+    transform: rotate(45deg) translate(-3px, 2px);
 }
 
 .container-title {
@@ -76,4 +97,6 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 25px;
+    margin-bottom: 20px;
 }
